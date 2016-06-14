@@ -42,26 +42,57 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   .state('welcome', {
     url: '/welcome',
-    // abstract: true,
     templateUrl: 'welcome.html',
     controller:'welcomeCtrl'
   })
 
+  /*tabs start*/
+  .state('tabs', {
+    url: '/tab',
+    templateUrl: 'templates/model-tabs.html',
+    controller:'tabCtrl',
+  })
+  .state('tabs.home', {
+    url: '/home',
+    views:{
+      'tab-home':{
+        templateUrl: 'templates/model-home.html',
+        controller:'homeCtrl'
+      }
+    }
+  })
+  .state('tabs.market', {
+    url: '/market',
+    views:{
+      'tab-market':{
+        templateUrl: 'templates/model-market.html',
+        controller:'marketCtrl'
+      }
+    }
+  })
+  .state('tabs.about', {
+    url: '/about',
+    views:{
+      'tab-about':{
+         templateUrl: 'templates/model-about.html',
+    controller:'aboutCtrl'
+      }
+    }
+  })
+  /*tabs end*/
+
   .state('signIn', {
     url: '/signIn',
-    // abstract: true,
     templateUrl: 'templates/signin.html',
     controller:'signInCtrl'
   })
   .state('signIn.forget', {
     url: '/forget',
-    // abstract: true,
     templateUrl: 'templates/forget.html',
     controller:'forgetCtrl'
   })
   .state('signIn.signup', {
     url: '/signup',
-    // abstract: true,
     templateUrl: 'templates/signup.html',
     controller:'signupCtrl'
   })

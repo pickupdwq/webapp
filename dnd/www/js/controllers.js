@@ -75,3 +75,15 @@ angular.module('starter.controllers', [])
 .controller('signupCtrl', function($scope) {
   
 })
+.controller('homeCtrl', function($scope) {
+  
+})
+.controller('tabCtrl', function($scope) {
+  
+})
+.controller('marketCtrl', function($scope) {
+  
+})
+.controller('aboutCtrl', function($scope) {
+  
+})
