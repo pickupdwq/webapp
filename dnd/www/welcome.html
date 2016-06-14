@@ -1,0 +1,18 @@
+<ion-slide-box class="black" on-slide-changed="slideHasChanged($index)" >
+		<ion-slide >
+			<div class="welcome-box blue">
+				<p class="welcome-normal {{page1}}">{{welcome.page1}}</p>
+			</div>
+		</ion-slide>
+		<ion-slide>
+			<div class="welcome-box pink">
+				<p class="{{page2}}">{{welcome.page2}}</p>
+			</div>
+		</ion-slide>
+		<ion-slide>
+			<div class="welcome-box red">
+				<p class="{{page3}}">{{welcome.page3}}</p>
+				<button class="button button-stable button-enter {{button_enter_active}}" ui-sref="signIn">{{welcome.enter}}</button>
+			</div>
+		</ion-slide>
+</ion-slide-box>

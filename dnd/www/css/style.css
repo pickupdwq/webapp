@@ -1,0 +1,26 @@
+/* Empty. Add your own CSS if you like */
+/*welcome*/
+.welcome-box{position: absolute;width: 100%;height: 100%;}
+.welcome-box p{font-size: 22px;color: #fff;text-align: center;opacity: 0;transition:all 1.5s;position: absolute;left: 50%;top:50%;transform: translate3d(-50%,-50%,0);}
+.black{background: #000;}
+.blue{background: rgb(237,217,192);}
+.pink{background: rgb(201,216,197) ;}
+.red{background: rgb(168,182,191) ;}
+.welcome-box .welcome-normal{opacity: 1;}
+.welcome-box .page2,.welcome-box .page3,.welcome-box .page1{opacity: 1;}
+.button-enter{position: absolute;left: 50%;bottom: 10%;transform: translate3d(-50%,-50%,0);width:30%;transition: all 2s;opacity: 0;}
+.button-enter-active{width: 42%;opacity: 1;}
+
+
+/*sign*/
+.userLogin-bg{background: rgb(34,36,56);}
+.user-sign-wrap .user-icon{width: 34%;margin: 15% auto;border-radius: 50%;overflow: hidden;animation: iconScale 5s forwards;}
+.user-sign-wrap .user-icon img{width: 100%;display: block;}
+.user-sign-wrap .user-form-wrap{width: 80%;margin: 0 auto;}
+.user-sign-wrap .user-form-wrap i{min-width:35px;font-size: 20px;}
+.user-sign-wrap .list-inset{background: transparent;}
+.user-sign-wrap .user-other-info{text-align: center;color: #fff;}
+@keyframes iconScale{
+	0%{transform: scale(0.9);}
+	100%{transform: scale(1);}
+}

@@ -1,0 +1,29 @@
+<ion-view animation="slide-left-right">
+    <ion-content class="userLogin-bg">
+        <div class="user-sign-wrap">
+            <div class="user-icon">
+                <img ng-src="{{user.imgPath}}">
+            </div>
+            <form class="user-form-wrap" name="myForm">
+                <div class="list list-inset">
+                    <label class="item item-input">
+                        <i class="icon ion-person"></i>
+                        <input type="text" placeholder="請輸入用戶名" ng-model="user.userName" required>
+                    </label>
+                    <label class="item item-input">
+                        <i class="icon ion-social-wordpress"></i>
+                        <input type="password" placeholder="請輸入密碼" ng-model="user.passWord" required>
+                    </label>
+                </div>
+                <div class="list-inset">
+                    <button class="button button-positive button-small col" ng-disabled="myForm.$invalid" ng-click="infoValid()">{{info.login}}</button>
+                </div>
+            </form>
+            <div class="user-other-info">
+              <p><a ui-sref="signIn.forget">{{info.forget}}</a>/<a ui-sref="signIn.signup">{{info.signup}}</a></p>
+            </div>
+            <!--test button-->
+            <button class="button button-assertive button-small col col-33 col-offset-33">{{info.test}}</button>
+        </div>
+    </ion-content>
+</ion-view>
