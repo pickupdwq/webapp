@@ -1,8 +1,126 @@
+<link rel="stylesheet" type="text/css" href="lib/jq-plugin/flexslider.css">
+<script src="lib/jq-plugin/jquery.flexslider-min.js"></script>
 <ion-view view-title="首頁">
 <ion-header-bar class="bar bar-header bar-stable">
     <h1 class="title">首頁</h1>
 </ion-header-bar>
-<ion-content>
-      Some super content here!
-</ion-content>
+
+<div class="homeWrap">
+<ion-content has-bouncing="false">
+	<div class="padding home-subheader-slide">
+			<div class="flexslider"> 
+			      <ul class="slides"> 
+			        <li ng-repeat="imgurl in homeInfo"><img ng-src="{{imgurl.img}}" /></li> 
+			      </ul> 
+			</div> 
+	</div>
+	<ion-scroll zooming="false" direction="y">
+	  <div class="list clearfix">
+		<a class="item item-icon-left">
+			Design Award 获奖者
+		<span class="item-note">
+	     	显示全部
+			<i class="ion-chevron-right"></i>
+	    </span>
+		</a>
+	</div>
+	<div class="list list-product-wrap">
+			<div class="flexslider2"> 
+			      <ul class="slides"> 
+			        <li><img src="img/product/1.jpg" /></li>
+			        <li><img src="img/product/2_03.jpg" /></li>
+			        <li><img src="img/product/2_05.jpg" /></li>
+			        <li><img src="img/product/1.jpg" /></li>
+			        <li><img src="img/product/2_03.jpg" /></li>
+			        <li><img src="img/product/2_05.jpg" /></li>   
+			      </ul> 
+			</div> 
+	</div>
+	<div class="list clearfix">
+		<a class="item item-icon-left">
+			Design Award 获奖者
+		<span class="item-note">
+	     	显示全部
+			<i class="ion-chevron-right"></i>
+	    </span>
+		</a>
+	</div>
+	<div class="list list-product-wrap">
+			<div class="flexslider2"> 
+			      <ul class="slides"> 
+			        <li><img src="img/product/1.jpg" /></li>
+			        <li><img src="img/product/2_03.jpg" /></li>
+			        <li><img src="img/product/2_05.jpg" /></li>
+			        <li><img src="img/product/1.jpg" /></li>
+			        <li><img src="img/product/2_03.jpg" /></li>
+			        <li><img src="img/product/2_05.jpg" /></li>   
+			      </ul> 
+			</div> 
+	</div>
+	<div class="list clearfix">
+		<a class="item item-icon-left">
+			Design Award 获奖者
+		<span class="item-note">
+	     	显示全部
+			<i class="ion-chevron-right"></i>
+	    </span>
+		</a>
+	</div>
+	<div class="list list-product-wrap">
+			<div class="flexslider2"> 
+			      <ul class="slides"> 
+			        <li><img src="img/product/1.jpg" /></li>
+			        <li><img src="img/product/2_03.jpg" /></li>
+			        <li><img src="img/product/2_05.jpg" /></li>
+			        <li><img src="img/product/1.jpg" /></li>
+			        <li><img src="img/product/2_03.jpg" /></li>
+			        <li><img src="img/product/2_05.jpg" /></li>   
+			      </ul> 
+			</div> 
+	</div>
+	<div class="list clearfix">
+		<a class="item item-icon-left">
+			Design Award 获奖者
+		<span class="item-note">
+	     	显示全部
+			<i class="ion-chevron-right"></i>
+	    </span>
+		</a>
+	</div>
+	<div class="list list-product-wrap">
+			<div class="flexslider2"> 
+			      <ul class="slides"> 
+			        <li><img src="img/product/1.jpg" /></li>
+			        <li><img src="img/product/2_03.jpg" /></li>
+			        <li><img src="img/product/2_05.jpg" /></li>
+			        <li><img src="img/product/1.jpg" /></li>
+			        <li><img src="img/product/2_03.jpg" /></li>
+			        <li><img src="img/product/2_05.jpg" /></li>   
+			      </ul> 
+			</div> 
+	</div>
+	 </ion-scroll>
+	
+	</ion-content>
+</div>
 </ion-view>
+<script type="text/javascript">
+	$(function(){
+		$(".flexslider").flexslider({
+			animation: "slide",
+			slideshowSpeed: 4000, //展示时间间隔ms
+			animationSpeed: 400, //滚动时间ms
+			touch: true, //是否支持触屏滑动
+			controlNav: false 
+		}); 
+		$(".flexslider2").flexslider({
+			animation: "slide",
+		    animationLoop: false,
+		    itemWidth: 210,
+		    itemMargin: 5,
+		    minItems: 4,
+		    maxItems: 4,
+		    controlNav: false 
+		}); 
+	})
+</script>

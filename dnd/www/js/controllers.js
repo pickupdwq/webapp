@@ -76,7 +76,12 @@ angular.module('starter.controllers', [])
   
 })
 .controller('homeCtrl', function($scope) {
-  
+    $scope.homeInfo=[
+      {'img':'img/slider/s1.jpg'},
+      {'img':'img/slider/s2.jpg'},
+      {'img':'img/slider/s3.jpg'},
+      {'img':'img/slider/s4.jpg'},
+      ]
 })
 .controller('tabCtrl', function($scope) {
   
